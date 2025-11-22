@@ -1,1 +1,3 @@
-Climate data downloaded from WorldClim and used in the study.
+To access the climate rasters used in the paper, go to 
+#WorldClim.org and download the 30 arch second bioclimatic variables 
+#and place the unzipped rasters in the Climate directory.

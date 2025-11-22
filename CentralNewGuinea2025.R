@@ -60,7 +60,7 @@ colnames(elev_df)[3] <- "elevation"
 lon=Roscoe2025$LONG
 lat=Roscoe2025$LAT
 
-###Attempt to extract elevation to points
+###Extract elevation to points
 coords1 <- data.frame(lon, lat)
 
 # Convert to spatial points
@@ -77,7 +77,11 @@ Elevation<-result$elevation
 
 RoscoeElv<-cbind(Elevation,Roscoe2025)
 
-###Attempt to extract bioclimate variables
+###Extract bioclimate variables. To access the climate rasters used in the paper, go to 
+#WorldClim.org and download the 30 arch second bioclimatic variables 
+#and place the unzipped rasters in the Climate directory.
+
+
 bioclim <- rast("Climate/wc2.1_30s_bio_1.tif")  # load one layer
 
 lon=Roscoe2025$LONG
